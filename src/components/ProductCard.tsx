@@ -13,11 +13,8 @@ const ProductCard: React.FC<ProductCardProps> = ({ imageSrc, description, path }
   return (
     <motion.div className="bg-[var(--background-element-3)] flex flex-col justify-between rounded-3xl shadow-2xl overflow-hidden mx-3 max-w-[300px] w-full sm:max-w-[320px] md:max-w-[340px] xl:max-w-[400px] 2xl:max-w-[450px] h-[350px]"
     initial= {{ opacity:0, y: 40 }}
-              
-                transition={{ duration:1, delay:0.3}}
-                whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.03 }}
-          viewport={{ once: true }}
+                    animate = {{opacity : 1, y: 0}}
+                    transition={{ duration:1, delay:0.3}}
     >
       {/* Image */}
       <div className="w-full h-[250px] relative">

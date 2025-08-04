@@ -13,11 +13,8 @@ const Info: FC<InfoProps> = ({ icon,title,description }) => {
             <div className="flex gap-5">
                 <motion.div className='text-2xl border border-[var(--text-span)] rounded-full p-2 sm:p-4 gap-2'
                 initial= {{ opacity:0, y: 40 }}
-              
-                transition={{ duration:1, delay:0.3}}
-                whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.03 }}
-          viewport={{ once: true }}
+                    animate = {{opacity : 1, y: 0}}
+                    transition={{ duration:1, delay:0.3}}
                 >
                     {icon}
                 </motion.div>

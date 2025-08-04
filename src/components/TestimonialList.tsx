@@ -54,19 +54,13 @@ const TestimonialList: FC = () => {
             <div className=' text-center'>
                 <motion.h2 className='text-center py-5 my-5 text-3xl sm:py-10 font-bold sm:text-4xl '
                 initial= {{ opacity:0, y: 40 }}
-              
-                transition={{ duration:1, delay:0.3}}
-                whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.03 }}
-          viewport={{ once: true }}
+                    animate = {{opacity : 1, y: 0}}
+                    transition={{ duration:1, delay:0.3}}
                 >Testimonials</motion.h2>
                 <motion.p className='text-sm sm:text-2xl px-5 text-[var(--text-element-small-black)]'
                 initial= {{ opacity:0, y: 40 }}
-              
-                transition={{ duration:1, delay:0.3}}
-                whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.03 }}
-          viewport={{ once: true }}
+                    animate = {{opacity : 1, y: 0}}
+                    transition={{ duration:1, delay:0.3}}
                 >
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 </motion.p>

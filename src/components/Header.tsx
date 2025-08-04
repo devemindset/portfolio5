@@ -2,8 +2,8 @@
 
 import { Menu, X } from 'lucide-react';
 import { useState, type FC } from 'react';
-import SmartLink from '../ui/SmartLink';
 import { usePathname } from 'next/navigation';
+import SmartLink from './ui/SmartLink';
 
 const Header: FC = () => {
   const [open, setOpen] = useState(false);

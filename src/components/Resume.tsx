@@ -14,50 +14,35 @@ const Resume: FC<ResumeProps> = ({title,field,interval,description,institut}) =>
             <div className='w-full'>
                 <motion.h4 className='font-bold py-5 text-xl'
                 initial= {{ opacity:0, y: 40 }}
-              
-                transition={{ duration:1, delay:0.3}}
-                whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.03 }}
-          viewport={{ once: true }}
+                    animate = {{opacity : 1, y: 0}}
+                    transition={{ duration:1, delay:0.3}}
                 >{title}</motion.h4>
                 <div className='border-l-2 border-[var(--background-element)] rounded-l-sm space-y-5 pl-3'>
                     <motion.div className='text-[var(--text-element-small)] font-bold text-xl'
                     initial= {{ opacity:0, y: 40 }}
-              
-                transition={{ duration:1, delay:0.3}}
-                whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.03 }}
-          viewport={{ once: true }}
+                    animate = {{opacity : 1, y: 0}}
+                    transition={{ duration:1, delay:0.3}}
                     >
                     {field}
                     </motion.div>
                     <motion.div className='font-bold text-sm'
                     initial= {{ opacity:0, y: 40 }}
-              
-                transition={{ duration:1, delay:0.3}}
-                whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.03 }}
-          viewport={{ once: true }}
+                    animate = {{opacity : 1, y: 0}}
+                    transition={{ duration:1, delay:0.3}}
                     >
                         {interval}
                     </motion.div>
                     <motion.div className='text-[var(--text-element-small)] text-sm'
                     initial= {{ opacity:0, y: 40 }}
-              
-                transition={{ duration:1, delay:0.3}}
-                whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.03 }}
-          viewport={{ once: true }}
+                    animate = {{opacity : 1, y: 0}}
+                    transition={{ duration:1, delay:0.3}}
                     >
                         {institut}
                     </motion.div>
                     <motion.div className='text-[var(--text-element-small)] text-sm'
                     initial= {{ opacity:0, y: 40 }}
-              
-                transition={{ duration:1, delay:0.3}}
-                whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.03 }}
-          viewport={{ once: true }}
+                    animate = {{opacity : 1, y: 0}}
+                    transition={{ duration:1, delay:0.3}}
                     >
                         {description}
                     </motion.div>

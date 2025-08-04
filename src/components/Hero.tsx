@@ -16,7 +16,7 @@ const Hero: FC = () => {
                 animate = {{opacity : 1, y: 0}}
                 transition={{ duration:1, delay:0.3}}
                 style={{
-                    backgroundImage : "url('./template_3/hero-bg.jpg')"
+                    backgroundImage : "url('./template_5/hero-bg.jpg')"
                 }}
                 >
                     
@@ -41,7 +41,7 @@ const Hero: FC = () => {
                 
                 
                 </motion.h3>
-                <button className='bg-[var(--btn-bg)] md:py-2 lg:px-10 px-5 py-1 text-[var(--btn-text)] mt-3 lg:mt-10 rounded-4xl font-semibold hover:scale-105 hover:bg-[var(--btn-hover)] transition-all cursor-pointer shadow-2xl hover:text-[var(--btn-bg)] '>ABOUT ME</button>
+                <button className='bg-[var(--btn-bg)] md:py-2 lg:px-10 px-5 py-1 text-[var(--btn-text)] mt-3 lg:mt-10 rounded-4xl font-semibold hover:scale-105 hover:bg-[var(--btn-hover)] transition-all cursor-pointer shadow-2xl '>ABOUT ME</button>
                 </div>
             </section>
             </>

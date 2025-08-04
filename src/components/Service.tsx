@@ -14,11 +14,8 @@ const Service: FC<ServiceProps> = ({icon,description,path,title}) => {
         return (
             <motion.div className='block pl-10 2xl:flex bg-[var(--background-element-3)] p-10 mx-3 shadow-2xl rounded-2xl gap-5 space-y-3'
             initial= {{ opacity:0, y: 40 }}
-              
-                transition={{ duration:1, delay:0.3}}
-                whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.03 }}
-          viewport={{ once: true }}
+                    animate = {{opacity : 1, y: 0}}
+                    transition={{ duration:1, delay:0.3}}
             >
                        
                             <motion.div className='mr-2 '

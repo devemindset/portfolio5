@@ -1,9 +1,10 @@
 "use client"
-import { useEffect, useState, type FC } from 'react';
+import {  type FC } from 'react';
 import Service from './Service';
-import OkIcon from '../ui/OkIcon';
+
 import {motion} from 'framer-motion'
-import BackgroundLoader from '../BackgroundLoader';
+import OkIcon from './ui/OkIcon';
+
 
 const serviceList = [
     {
@@ -57,30 +58,16 @@ const serviceList = [
 ]
 
 const ServiceList: FC = () => {
-          const [loading, setLoading] = useState(true)
 
-      useEffect(() => {
-    // Simule le chargement ou attends que le composant soit monté
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1500); // 1.5s
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) return <BackgroundLoader />
         return (
             <section className='my-5 sm:my-20 bg-[var(--background-element-3)] pb-20 w-screen min-h-screen'>
                 <motion.div className=' text-center'
    
                 >
                     <motion.h2 className='text-center py-5 my-5  text-3xl sm:py-10 font-bold sm:text-4xl'
-                    initial= {{ opacity:0, y: 40 }}
-              
-                transition={{ duration:1, delay:0.3}}
-                whileInView={{ opacity: 1, y: 0 }}
-          whileHover={{ scale: 1.03 }}
-          viewport={{ once: true }}
+                   initial= {{ opacity:0, y: 40 }}
+                    animate = {{opacity : 1, y: 0}}
+                    transition={{ duration:1, delay:0.3}}
                     >Services</motion.h2>
                     <motion.p className='text-xl px-5 text-[var(--text-element-small-black)]'
                     initial= {{ opacity:0, y: 40 }}

@@ -23,7 +23,7 @@ const Footer: FC = () => {
                     <a href="#"><i className="bi bi-linkedin" /></a>
                 </div>
             </div>
-            <div className='border-t py-5 border-[var(--text-element-small)] text-sm text-[var(--text-element-small-black)]'>Copyright <span className='italic font-bold'>James</span> All Rights Reserved</div>
+            <div className='border-t py-5 border-[var(--text-element-small)] text-sm text-[var(--text-element-small-black)]'>Copyright <span className='italic font-bold'>Rose</span> All Rights Reserved</div>
           </motion.div>  
             
         );

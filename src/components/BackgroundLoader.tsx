@@ -7,7 +7,7 @@ const BackgroundLoader: FC = () => {
     // Simule le chargement ou attends que le composant soit monté
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 1500); // 1.5s
+    }, 300); // 1.5s
 
     return () => clearTimeout(timer);
   }, []);

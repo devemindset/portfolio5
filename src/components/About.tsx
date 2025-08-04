@@ -1,27 +1,16 @@
 "use client"
 import Image from 'next/image';
-import { useEffect, useState, type FC } from 'react';
+import { type FC } from 'react';
 import List from './List';
 import {motion} from "framer-motion"
-import BackgroundLoader from '../BackgroundLoader';
+
 
 const skills = [
     "React","Typescript","Java","Django","SEO","Docker"
 ]
 
 const About: FC = () => {
-      const [loading, setLoading] = useState(true)
 
-      useEffect(() => {
-    // Simule le chargement ou attends que le composant soit monté
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1500); // 1.5s
-
-    return () => clearTimeout(timer);
-  }, []);
-
-  if (loading) return <BackgroundLoader />
     
         return (
             <section className='bg-[var(--background-element-3)] my-5 sm:my-20 w-screen min-h-screen pb-20'>
@@ -47,7 +36,7 @@ const About: FC = () => {
           viewport={{ once: true }}
                                 >
                                     <Image
-                                        src="/profile-img.jpg"
+                                        src="/about_profile.jpg"
                                         alt="About picture"
                                         width={350}
                                         height={350}
