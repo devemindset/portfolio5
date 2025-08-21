@@ -57,9 +57,11 @@ export interface AboutType {
   description: string;
 }
 
-export interface BackgroundImageType {
-  id: number;
-  background_image: string;
+export interface HeroData {
+  name: string;
+  subtitle: string;
+  buttonText: string;
+  backgroundImage: string;
 }
 
 export interface ContactType {
@@ -84,3 +86,4 @@ export interface BlogCardInfo {
       author : string;
       cover :string;
 }
+
